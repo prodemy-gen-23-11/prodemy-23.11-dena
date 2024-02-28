@@ -1,0 +1,221 @@
+@import url("clash-grotesk.css");
+
+body{
+    font-family: 'ClashGrotesk-Regular';
+    background-color: #e7ded5;
+}
+
+.main{
+    display: inline-block;
+    color: #fdf8f3;
+    width: 95%;
+    height: 700px;
+    margin: 0 2.5%;
+    background-color: brown;
+    background-image: url("../images/banner-new.jpg");
+    background-size:cover;
+    
+}
+
+.main a{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fdf8f3;
+}
+
+.main-left{
+    display: inline-block;
+    width: 39%;
+    text-align: left;
+    margin-left: 0.5%;
+}
+
+
+#title{
+    font-size: small;
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+
+.main-right{
+    display: inline-block;
+    width: 39%;
+    text-align: right;
+    margin-right: 0.5%;
+}
+
+.main-bottom{
+    margin-top: 200px;
+    text-align: center;
+}
+
+.main-bottom h1{
+    font-size: 70px;
+    
+}
+
+.main-bottom h2{
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+.main-bottom p{
+    font-size: 25px;
+}
+
+.products{
+    /* display: inline-block; */
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0 2.5%;
+    background-color: white;
+}
+
+.favorite-card{
+    vertical-align: top;
+    display: inline-block;
+    width: 24%;
+    /* margin: 0 0.5%; */
+    padding: 2px;
+    height: 400px;
+}
+
+
+
+.favorite-card a{
+    display: inline-block;
+    margin-top: 235px;
+}
+
+.favorite-content{
+    margin-left: 10px;
+}
+
+.product{
+    display: inline-block;
+    width: 24%;
+    height: 400px;
+    padding: 2px;
+    transition: width 1s;
+}
+
+.product img{
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.product h3{
+    font-weight: lighter;
+}
+
+.product p{
+    font-weight: bold;
+}
+
+.product-info{
+    height: 20%;
+}
+
+.product-description{
+    display: inline-block;
+    width: 70%;
+}
+
+.buy-product{
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+}
+
+.buy-product a{
+    width: 20%;
+    object-fit: contain;
+}
+
+.menu-button{
+    display: none;
+}
+
+.product:hover img{
+    width: 100%;
+    height: 85%;
+}
+
+#myLinks{
+    display: none;
+}
+
+#mobile-title{
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .main-left{
+        display: none;
+    }
+
+    .main-right{
+        display: none;
+    }
+
+    .main-bottom{
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #title{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+        position: relative;
+        left: 0%;
+    }
+
+    #mobile-title{
+        display: block;
+        position: relative;
+        left: 5%;
+        top: -10%;
+    }
+
+    .mobile-container{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
+
+    .products{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .favorite-card{
+        width: 100%;
+    }
+
+    .product{
+        width: 100%;
+    }
+
+    .product img{
+        width: 90%;
+    }
+
+    
+
+}
+
+
